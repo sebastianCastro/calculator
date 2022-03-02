@@ -1,0 +1,98 @@
+body {
+  height: 100vh;
+  margin: 0%;
+  overflow: hidden;
+  font-family:Helvetica;
+  font-weight: 100;
+}
+
+#screen-display { grid-area: screen-display;}
+#clear { grid-area: clear; }
+#plus-minus-signs { grid-area: plus-minus-signs; }
+#percentage-sign { grid-area: percentage-sign; }
+#nine { grid-area: nine; }
+#eight { grid-area: eight; }
+#seven { grid-area: seven; }
+#six { grid-area: six; }
+#five { grid-area: five; }
+#four { grid-area: four; }
+#three { grid-area: three; }
+#two { grid-area: two; }
+#one { grid-area: one; }
+#number-zero {
+  grid-area: number-zero;
+  width: 180px;
+  border-radius: 20% / 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 35px;
+}
+#point { grid-area: point; }
+#division-sign { grid-area: division-sign; }
+#multiplication-sign {
+  grid-area: multiplication-sign;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#minus-sign { grid-area: minus-sign; }
+#plus-sign { grid-area: plus-sign; }
+#equals-sign { grid-area: equals-sign; }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'screen-display screen-display screen-display screen-display'
+    'clear plus-minus-signs percentage-sign division-sign'
+    'seven eight nine multiplication-sign'
+    'four five six minus-sign'
+    'one two three plus-sign'
+    'number-zero number-zero point equals-sign';
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: start;
+}
+
+button {
+  border-radius: 50%;
+  padding: 0;
+  border: hidden;
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+}
+
+#container {
+    height: 100vh;
+    background-color: #1D1D1C;
+  }
+
+#screen-display {
+  font-size: 50px;
+  color: white;
+  height: 100px;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.specials {
+  background-color: #D5D4D3;
+  color: #1D1D1C;
+}
+
+.numbers {
+  background-color: #505151;
+  color: white;
+}
+
+.operator {
+  background-color: #FE9501;
+  color: white;
+}
